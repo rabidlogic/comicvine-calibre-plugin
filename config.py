@@ -40,5 +40,4 @@ class ConfigWidget(QWidget):
     'Apply new settings value'
     PREFS['api_key'] = str(self.key_msg.text())
     PREFS['worker_threads'] = int(self.threads_msg.text())
-    pycomicvine.api_key = PREFS['api_key']
 
