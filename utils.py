@@ -43,9 +43,15 @@ def api_call(url, params):
   for term in default_params.keys():
     params[term] = default_params[term]
 
+  headers = {
+    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+  }
+
   params = urlencode(params)
   url = url + "?" + params
-  r = json.loads(urllib2.urlopen(url).read())
+  req = urllib2.Request(url)
+  req.add_header('User-Agent', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36')
+  r = json.loads(urllib2.urlopen(req).read())
   
   if (type(r) == dict):
     if "results" in r:
