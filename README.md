@@ -1,6 +1,8 @@
 # Comicvine
 A calibre metadata source plugin for comicvine.com
 
+Note: This is essentially a long forgotten fork of another comicvine plugin, but I could never get it to work for me. Removed the deps on pycomicvine and simplified the API interaction. No way near perfect or cool - this just works for me. 
+
 ## Install
 
 On a Unix system this can be done using:
@@ -28,11 +30,7 @@ return the most preferred result.
 
 Only searches the Title. 
 
-## Contribute 
-
-You can contribute by submitting issue tickets on GitHub
-(https://github.com/authmillenon/pycomicvine), including Pull
-Requests. You can test the comicvine plugin by calling:
+You can test the comicvine plugin by calling:
 
     calibre-debug -e __init__.py
 
