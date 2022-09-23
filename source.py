@@ -12,14 +12,14 @@ from calibre.ebooks.metadata.opf2 import metadata_to_opf
 from calibre.ebooks.metadata.sources.base import Source
 from calibre.utils.config import OptionParser
 import calibre.utils.logging as calibre_logging
-from calibre_plugins.comicvine.config import PREFS
-from calibre_plugins.comicvine import utils
+from calibre_plugins.mycomicvine.config import PREFS
+from calibre_plugins.mycomicvine import utils
 
 class Comicvine(Source):
   ''' Metadata source implementation '''
-  name = 'Comicvine'
+  name = 'MyComicvine'
   description = 'Downloads metadata and covers from Comicvine'
-  author = 'Russell Heilling'
+  author = 'Me'
   version = (0, 11, 2)
   capabilities = frozenset(['identify', 'cover'])
   touched_fields = frozenset([

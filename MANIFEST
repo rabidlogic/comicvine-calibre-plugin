@@ -1,6 +1,6 @@
 LICENSE
 README.md
-plugin-import-name-comicvine.txt
+plugin-import-name-mycomicvine.txt
 __init__.py
 config.py
 source.py

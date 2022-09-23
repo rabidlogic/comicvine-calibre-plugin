@@ -15,7 +15,7 @@ from urllib.parse import urlencode
 from calibre.ebooks.metadata.book.base import Metadata
 from calibre.utils import logging as calibre_logging # pylint: disable=W0404
 from calibre.utils.config import JSONConfig
-from calibre_plugins.comicvine.config import PREFS
+from calibre_plugins.mycomicvine.config import PREFS
 
 # Optional Import for fuzzy title matching
 try:
