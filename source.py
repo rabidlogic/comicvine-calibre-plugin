@@ -37,7 +37,7 @@ class Comicvine(Source):
     Source.__init__(self, *args, **kwargs)
 
   def config_widget(self):
-    from calibre_plugins.comicvine.config import ConfigWidget
+    from calibre_plugins.mycomicvine.config import ConfigWidget
     return ConfigWidget()
 
   def save_settings(self, config_widget):
